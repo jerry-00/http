@@ -1,0 +1,12 @@
+http:
+  port: 8600
+server:
+  port: 8500
+  ssl:
+#    keytool -genkey -alias muxi -keypass 123456 -keyalg RSA -keysize 2048 -validity 365
+#    -storetype PKCS12 -keystore D:/https.p12 -storepass 123456
+#    -ext SAN=IP:127.0.0.1,DNS:localhost,IP:192.168.0.202,DNS:www.liotw.cn
+    key-store: classpath:https.p12
+    key-alias: muxi
+    key-store-password: 123456
+    key-store-type: PKCS12
