@@ -6,7 +6,7 @@ This is Apache HttpClient project. 这是一个Spring Boot项目，调用外部�
 ## Table of Contents
 + [Environment](https://github.com/loveisontheway/http#Environment)
 + [Project](https://github.com/loveisontheway/http#Project)
-+ [HTTP&HTTPS](https://github.com/loveisontheway/http#HTTP&HTTPS)
++ [SSL](https://github.com/loveisontheway/http#SSL)
 
 ## Environment
 + `JDK:` 1.8+
@@ -22,7 +22,7 @@ This is Apache HttpClient project. 这是一个Spring Boot项目，调用外部�
 | https.p12 | 服务端证书 |
 | https.crt | 客户端证书 |
 
-## HTTP&HTTPS
+## SSL
 在com.muxi.http包下，`HttpApplication.java`类是项目启动类；支持http请求通过代码实现，https请求通过`application.yml`直接配置。
 ```java
 @SpringBootApplication
