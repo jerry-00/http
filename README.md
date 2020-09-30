@@ -12,15 +12,22 @@ This is Apache HttpClient project. 这是一个Spring Boot项目，调用外部�
 + `JDK:` 1.8+
 + `Tomcat:` 9.0.x
 + `Spring Boot:` 2.3.x
-+ `Http Client:` 4.5.x
++ `httpclient:` 4.5.x
++ `httpmime:` 4.5.x
++ `fastjson:` 1.2.x
++ `lombok:` 1.18.x
 
 ## Project
 | name | description |
 | :------ | :------ |
 | HttpApplicationTests.java | HttpClient 发送方 |
-| HttpController | HttpClient 接收方 |
+| HttpController.java | HttpClient 接收方 |
 | https.p12 | 服务端证书 |
 | https.crt | 客户端证书 |
+| httpclient | HTTP协议客户端编程工具包，HTTP和浏览器有点像，但却不是浏览器，它是一个HTTP通信库。 |
+| httpmime | 文件传输 |
+| fastjson | JSON处理 |
+| lombok | 简化java代码，用注解替代`getter/setter` |
 
 ## SSL
 在com.muxi.http包下，`HttpApplication.java`类是项目启动类；支持http请求通过代码实现，https请求通过`application.yml`直接配置。
